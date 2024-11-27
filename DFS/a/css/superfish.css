@@ -1,0 +1,216 @@
+
+.menu_block  {
+	z-index: 999;
+	position: relative;
+	text-align: center;
+	float: right;
+	padding-right: 0px;
+	padding-top: 6px;
+}
+
+.menu_block >nav {
+
+}
+
+
+nav>.sf-menu {
+	z-index: 999;
+	text-align: center;
+	position: relative;
+}
+nav{ position:relative;padding: 0px 0 0 0;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu li {float:left;position:relative; }
+.sf-menu>li {
+	z-index: 900;
+	float: left;
+	position: relative;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+}
+
+.sf-menu>li+li {
+	margin-left: 42px;
+}
+
+
+.sf-menu>li>ul>li {
+  float: none;
+  position: static;
+
+}
+
+
+.sf-menu>li>a{
+	overflow: hidden;
+	position: static;
+	z-index: 999;
+	
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.sf-menu>li>a i {
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+.sf-menu>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 50%;
+	margin-left: -3px;
+	width: 7px;
+	background: url(../images/arrows.png) 0 bottom no-repeat;
+	height: 5px;
+	bottom: -5px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu>li.sfHover>a.sf-with-ul:after, .sf-menu>li.current>a.sf-with-ul:after {
+	background-position: 0 0;
+}
+
+.sf-menu>li:hover>a, .sf-menu>li.sfHover>a, .sf-menu>li.current>a {
+	color: #282828;
+}
+ 
+.sf-menu>li>ul>li>a>span {
+	position: absolute;
+	width: 7px;
+	background: url(../images/arrows.png) 0 0;
+	height: 5px;
+	right: 50px;
+	bottom: 14px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.sf-menu>li>ul>li>a:hover>span {
+	background-position: 0 bottom;
+}
+
+
+.sf-menu a{
+
+}
+
+
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover>ul{
+	top: 37px;
+	width: 131px;
+	left: 2px;
+	background: #fff;
+	z-index: 999; 
+	padding-top: 6px;
+	padding-bottom: 7px;
+
+}
+
+
+.sf-menu li ul li{
+	position: relative;
+	text-align: left;
+	float: none !important;
+	font: 12px/20px  'Open Sans', sans-serif;
+}
+
+
+.sf-menu li ul li a{
+	position: relative;
+	z-index: 999;
+	display: block;
+	color:#282828;
+	padding: 5px 27px 7px;
+}
+
+.sf-menu li ul li+li {
+	margin-top: -4px;
+}
+
+.sf-menu li ul li+li+li {
+	margin-top: -3px;
+}
+
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover>a {  
+	color: #fff;
+	background-color: #08b088;
+
+}
+
+/*================================>> 3 Level <<========================================*/
+.sf-menu li.sfHover li.sfHover ul{
+	top: -6px;
+	left: 131px;
+	width: 132px;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	background: #dedede;
+
+}
+
+
+.sf-menu li.sfHover li.sfHover ul li a {
+	padding-left: 30px;
+}
+
+.sf-menu li.sfHover li.sfHover ul li a:hover {
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+@media only screen and (max-width: 995px) {
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+	.menu_block {
+		float: none !important;
+		padding: 22px 0px 25px !important;
+		clear: both;
+		min-height: 0px;
+  	border: none;
+	}
+
+
+  header nav{
+  	border: none !important;
+		float:none;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;
+		
+	
+	}
+
+  header nav ul {
+  	border: none;
+  }
+
+	.sf-menu{display:none !important; float: none;}
+	#mm0{
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#202020;
+		width:100%;
+		margin: 0 auto;
+		float: none;
+    outline: none;
+		border:2px solid #fff;
+	}
+	
+	.search_block {
+		padding-bottom: 10px !important;	
+	}
+}
