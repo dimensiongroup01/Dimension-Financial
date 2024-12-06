@@ -11,12 +11,5 @@
     font-size: 14px;
 }
 
-.grid_12{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.fright h4{
-    color: #379BD6;
-}
+
