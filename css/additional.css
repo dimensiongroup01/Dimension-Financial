@@ -1,0 +1,15 @@
+.top{
+    height:32px;
+    width: 100%;
+    background-color: #379BD6;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+
+

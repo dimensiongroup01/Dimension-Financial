@@ -1,0 +1,182 @@
+.current {
+  font-weight: 600;
+  /* color: blue; */
+}
+
+.animation-scroll {
+  animation: scroll-animation both;
+  animation-timeline: view(70% 30%);
+}
+
+
+@keyframes scroll-animation {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+.animation-view {
+  animation: view-animation both 0.3s ease-in-out;
+}
+
+
+@keyframes view-animation {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.animation-right {
+  animation: right-animation both 0.5s ease-in-out;
+}
+
+
+@keyframes right-animation {
+  from {
+    opacity: 0;
+    /* scale: 0.8; */
+    transform: translateX(800px);
+  }
+
+  to {
+    opacity: 1;
+    /* scale: 1; */
+    transform: translateX(0);
+
+  }
+}
+
+.animation-left {
+  animation: left-animation both 1s ease-in-out;
+}
+
+
+@keyframes left-animation {
+  from {
+    opacity: 0;
+    /* scale: 0.8; */
+    transform: translateX(-800px);
+  }
+
+  to {
+    opacity: 1;
+    /* scale: 1; */
+    transform: translateX(0);
+
+  }
+}
+
+
+/* DIMENSION animation */
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  padding:  0 320px;
+  margin:  32px 0;
+  height: 50vh;
+  transition: height 0.5s ease-in-out;
+}
+
+.column {
+  border-radius: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #379cd6a2;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  transition: flex 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* Smooth transition */
+  cursor: pointer;
+  border: 2px solid white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.column:hover {
+  flex: 5;
+  animation: flex-col 0.5s ease-in-out forwards;
+}
+
+/* Default content (Visible initially) */
+.inner-content.default {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Expanded content (Hidden initially) */
+.inner-content.expanded {
+  scale: 0;
+  opacity: 0;
+  color: white;
+  visibility: hidden;
+  position: absolute;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/dfs-images-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Switch visibility smoothly on hover */
+.column:hover .inner-content.default {
+  scale: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.column:hover .inner-content.expanded {
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s;
+  background-image: url('../images/dfs-images-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Colors for each column */
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .column {
+    width: 100%;
+    height: 10vh;
+    flex: 1;
+  }
+
+  .column:hover {
+    flex: 1.5;
+    /* Adjust flex growth for mobile view */
+  }
+}
