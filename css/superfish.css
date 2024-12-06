@@ -44,8 +44,8 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	overflow: hidden;
 	position: static;
 	z-index: 999;
-	
-	color: #fff;
+	color: #379BD6;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -78,7 +78,8 @@ nav{ position:relative;padding: 0px 0 0 0;}
 }
 
 .sf-menu>li:hover>a, .sf-menu>li.sfHover>a, .sf-menu>li.current>a {
-	color: #282828;
+	color: #07447D;
+	text-decoration: underline;
 }
  
 .sf-menu>li>ul>li>a>span {
