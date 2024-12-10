@@ -191,3 +191,10 @@ top: 200px;
     /* Adjust flex growth for mobile view */
   }
 }
+
+header{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
