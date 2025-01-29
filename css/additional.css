@@ -57,7 +57,39 @@
     background-size: contain;
 }
 
+.ld-img{
+    height: 200px;
+    width:200px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
 
+#rm{
+    background-image: url('../images/1516571437701.jpeg');
+ 
+}
+
+#pc{
+    background-image: url('../images/1516640281499.png');
+}
+
+#vg{
+    background-image: url('../images/173571309168.png');
+}
+#sp{
+    background-image: url('../images/d091836f-f4f2-4359-8d8a-c286354ead50\ 1\ \(2\).png');
+}
+
+#vk{
+    background-image: url('../images/VK8421809b-6f4a-49a1-8e5c-4594602d3e0d.jpeg');
+}
+
+#pr{
+    background-image: url('../images/64105fe5-9dcc-4443-a45f-684843958a65\ 1.png');
+
+}
 @media screen and (max-width: 1200px) {
     .hero-container #text {
         height: 40%;
@@ -119,3 +151,5 @@
         background-size: contain;
     }
 }
+
+

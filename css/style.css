@@ -68,12 +68,17 @@ img {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	color: #07447D;
+	text-transform: uppercase;
+}
+h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #2268a9;
 	text-transform: uppercase;
 }
 
@@ -174,7 +179,7 @@ a.btn {
 	font: 12px/20px 'Open Sans', sans-serif;
 	color: #fff;
 	display: inline-block;
-	background-color: #08b088;
+	background-color: #379BD6;
 	padding: 5px 21px 7px;
 	margin-top: 19px;
 }
@@ -397,7 +402,7 @@ p.text1 {
 	bottom: 0;
 	right: 0;
 	text-align: center;
-	background-color: #08b088;
+	background-color: #379BD6;
 }
 
 .blog_img time span {
