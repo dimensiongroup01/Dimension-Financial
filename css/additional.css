@@ -28,7 +28,7 @@
 .hero-container #text {
     height: 40%;
     font-weight: 600;
-    font-size: 80px;
+    font-size: clamp(1.5rem, 5vw, 30rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -97,7 +97,6 @@
     .hero-container #text {
         height: 40%;
         font-weight: 600;
-        font-size: 60px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -157,11 +156,3 @@
     }
 }
 
-
-
-@media screen and (max-width: 490px) {
-
-    #text {
-        font-size: 30px;
-    }
-}
