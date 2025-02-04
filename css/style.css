@@ -222,6 +222,7 @@ a.btn:hover {
 	margin-bottom: 17px;
 }
 
+
 .fleft {
 	float: left;
 	width: auto !important;
@@ -666,8 +667,8 @@ footer p {
 	}
 
 	.container{
-		min-width: 768px;
-		max-width: 995px;
+		/* min-width: 768px; */
+		max-width: 100%;
 	} ;
 
 	.map address {
@@ -798,7 +799,6 @@ footer p {
 		height: auto;
 	}
 
-	header h1 a img {}
 
 	.map {
 		padding-right: 0px !important;
