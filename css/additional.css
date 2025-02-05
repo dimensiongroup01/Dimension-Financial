@@ -89,9 +89,12 @@
 
 #pr {
     background-image: url('../images/64105fe5-9dcc-4443-a45f-684843958a65\ 1.png');
-
 }
 
+
+#rs {
+    background-image: url('../images/rs.jpg');
+}
 
 @media screen and (max-width: 1200px) {
     .hero-container #text {
