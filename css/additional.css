@@ -96,6 +96,12 @@
     background-image: url('../images/rs.jpg');
 }
 
+#ub{
+    background-image: url('../images/ub.png');
+    /* background-size: ; */
+}
+
+
 @media screen and (max-width: 1200px) {
     .hero-container #text {
         height: 40%;
