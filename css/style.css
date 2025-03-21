@@ -160,6 +160,7 @@ ul.list1>li a:hover {
 /****Links****/
 
 
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -182,7 +183,7 @@ a.btn {
 	background-color: #379BD6;
 	padding: 5px 21px 7px;
 	margin-top: 19px;
-	margin:9px;
+	margin:8px;
 }
 
 a.btn:hover {
