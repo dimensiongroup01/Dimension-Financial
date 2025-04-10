@@ -20,7 +20,84 @@
   <link rel="stylesheet" href="css/additional.css">
   <script>
   </script>
+<style>
+  .section {
+      margin-bottom: 40px;
+    }
 
+    .profile-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .profile-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+      padding: 15px;
+      flex: 1 1 180px;
+      transition: transform 0.2s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-card img,
+    .ld-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      background-color: #ddd;
+      background-size: cover;
+      background-position: center;
+      display: inline-block;
+    }
+
+    .profile-name {
+      font-weight: bold;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .profile-title {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 12px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media screen and (max-width: 768px) {
+      .profile-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-card {
+        width: 90%;
+        max-width: 300px;
+      }
+    }
+</style>
 </head>
 
 <body class="" id="top">
@@ -45,9 +122,10 @@
             <ul style="font-weight: 600;" class="sf-menu">
               <li><a style="font-family: Poppins, sans-serif;" href="index.html">Home</a>
               </li>
+              <li><a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a></li>
               <li><a style="font-family: Poppins, sans-serif;" href="services.html"> Services</a></li>
-              <li><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact</a></li>
-              <li><a style="font-family: Poppins, sans-serif;" href="about-us.html">About</a></li>
+              <li><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a></li>
+              
             </ul>
           </nav>
           <div class="clear"></div>
@@ -57,216 +135,139 @@
 
   </header>
   <!--==============================Content=================================-->
-  <div class="content">
-    <div class="container_12">
-      <div class="grid_12 animation-view">
-        <h3>About us</h3>
-        <img src="images/logo.svg" alt="" class="img_inner fleft">
-        <div class="extra_wrapper" style="color: black;">
-          <p class="text1">
-            <span style="color: black; font-weight: 600;">
-              Dimension Financial Solutions Private Limited
-            </span>
+          <div class="content">
+            <div class="container_12">
+              <div class="grid_12 animation-view">
+                <h3>About us</h3>
+                <img src="images/logo.svg" alt="" class="img_inner fleft">
+                <div class="extra_wrapper" style="color: black;">
+                  <p class="text1">
+                    <span style="color: black; font-weight: 600;">
+                      Dimension Financial Solutions Private Limited
+                    </span>
 
-            was formed by professionals in field of finance
-            and industry with an objective to provide comprehensive range of financial services to business enterprise
-            in India.
-            Dimension Financial Solutions Private Limited was established by experienced professionals in the finance
-            industry with the objective of providing a comprehensive range of financial services to businesses across
-            India.
-            <br>
-            <br>
-            The company is a Securities and Exchange Board of India (SEBI)-registered stockbroker under the BSE New Debt
-            Segment, specializing in the debt market and offering a wide range of financial products.
+                    was formed by professionals in field of finance
+                    and industry with an objective to provide comprehensive range of financial services to business enterprise
+                    in India.
+                    Dimension Financial Solutions Private Limited was established by experienced professionals in the finance
+                    industry with the objective of providing a comprehensive range of financial services to businesses across
+                    India.
+                    <br>
+                    <br>
+                    The company is a Securities and Exchange Board of India (SEBI)-registered stockbroker under the BSE New Debt
+                    Segment, specializing in the debt market and offering a wide range of financial products.
 
-            Dimension Financial Solutions Private Limited provides end-to-end personalized investment management
-            services,
-            including planning, advisory, execution, and monitoring, to help clients achieve their financial goals
-            efficiently.
-            <br>
-            <br>
-            We were established in 2009 by a team of professionals who have vast experience in the field of debt
-            advisory,
-            debt placement and marketing of public issues of debt and equity. The current board of directors includes
-            high
-            experienced professionals in the field of merchant banking, debt advisory, private placement of bonds and
-            debentures.
-          </p>
-          <div class="clear"></div>
-        </div>
-      </div>
-      <div class="grid_12 animation-left">
-        <h3 class="head1">Our Mission</h3>
-        <ul class="list">
-          <li>
-            <div class="count">1.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Our mission is to deliver exceptional financial expertise, offering
-                  top-tier products and solutions tailored to our clients' needs.
-                </a></div>
-            </div>
-            <div class="clear"></div>
-          </li>
-          <li>
-            <div class="count">2.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">We are committed to upholding the highest standards of integrity, ensuring
-                  our actions reflect our core business principles.</a></div>
-            </div>
-            <div class="clear"></div>
-          </li>
-          <li>
-            <div class="count">3.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Our focus is on providing secure, efficient, and compliant services that
-                  minimize risk while driving positive returns.</a></div>
-            </div>
-            <div class="clear"></div>
-          </li>
-        </ul>
-      </div>
-      <!-- <div class="grid_4"> 
-        <h3 class="head1">Our Goals</h3>
-        <ul class="list">
-          <li>
-            <div class="count">1.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Management of Capital Issues Including IPO’s, FPO’s and right issue.
-                </a></div>
-            </div>
-            <div class="clear"></div>
-          </li>
-          <li>
-            <div class="count">2.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Management of public Debt issues and advisory for Debt Syndication.</a>
+                    Dimension Financial Solutions Private Limited provides end-to-end personalized investment management
+                    services,
+                    including planning, advisory, execution, and monitoring, to help clients achieve their financial goals
+                    efficiently.
+                    <br>
+                    <br>
+                    We were established in 2009 by a team of professionals who have vast experience in the field of debt
+                    advisory,
+                    debt placement and marketing of public issues of debt and equity. The current board of directors includes
+                    high
+                    experienced professionals in the field of merchant banking, debt advisory, private placement of bonds and
+                    debentures.
+                  </p>
+                  <div class="clear"></div>
+                </div>
               </div>
-            </div>
-            <div class="clear"></div>
-          </li>
-          <li>
-            <div class="count">3.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Underwriting in Public issues including SM IPO's.</a></div>
-            </div>
-
-          </li>
-          <li>
-            <div class="count">4.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Advisory to corporates in raising of equity and debt and also advisory
-                  capital restructuring.
-                </a></div>
-            </div>
-            <div class="clear"></div>
-          </li>
-          <li>
-            <div class="count">5.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Managing Buy Back of shares of listed companies.</a></div>
-            </div>
-            <div class="clear"></div>
-          </li>
-          <li>
-            <div class="count">6.</div>
-            <div class="extra_wrapper">
-              <div class="text1"><a href="#">Assisting Corporate in raising Private Equity.</a></div>
-            </div>
-          </li>
-        </ul>
-      </div> -->
-      <div class="grid_6 animation-right">
+              <div class="grid_12 animation-left">
+                  <h3 class="head1">Our Mission</h3>
+                     <ul class="list">
+                        <li>
+                          <div class="count">1.</div>
+                            <div class="extra_wrapper">
+                              <div class="text1"><a href="#">Our mission is to deliver exceptional financial expertise, offering
+                                      top-tier products and solutions tailored to our clients' needs.
+                                </a></div>
+                              </div>
+                              <div class="clear"></div>
+                         </li>
+                         <li>
+                            <div class="count">2.</div>
+                              <div class="extra_wrapper">
+                                <div class="text1"><a href="#">We are committed to upholding the highest standards of integrity, ensuring
+                                      our actions reflect our core business principles.</a>
+                                </div>
+                              </div>
+                              <div class="clear"></div>
+                          </li>
+                          <li>
+                            <div class="count">3.</div>
+                              <div class="extra_wrapper">
+                                <div class="text1"><a href="#">Our focus is on providing secure, efficient, and compliant services that
+                                      minimize risk while driving positive returns.</a>
+                                </div>
+                              </div>
+                               <div class="clear"></div>
+                          </li>
+                        </ul>
+                </div>
+                <div class="clear"></div>
+    
+      
+      <div class="section">
         <h3 class="head1">Leadership</h3>
-        <div class="block1">
-          <div id="vg" alt="" class="ld-img"></div>
-          <div class="extra_wrapper">
-            <div class="text1"><b>Vivek Gautam</b></div>
-            Whole Time Director
-            <br><a target="_blank" href="https://www.linkedin.com/in/vivek-gautam-057a61349/" class="btn">Know
-              More...</a>
+        <div class="profile-row">
+          
+    
+          <div class="profile-card">
+            <div class="ld-img" style="background-image: url('images/rm.png');"></div>
+            <div class="profile-name">Ravi Kant Mathur</div>
+            <div class="profile-title">Whole Time Director</div>
+            <a href="https://www.linkedin.com/in/ravi-kant-mathur-b9990a15/" target="_blank" class="btn">Know More</a>
           </div>
-          <div class="clear"></div>
-        </div>
-        <div class="block1">
-          <div id="rm" class="ld-img"></div>
-          <div class="extra_wrapper">
-            <div class="text1"><b>Ravi Kant Mathur</b></div>
-            Whole Time Director
-            <br><a target="_blank" href="https://www.linkedin.com/in/ravi-kant-mathur-b9990a15/" class="btn">Know
-              More...</a>
+    
+          <div class="profile-card">
+            <div class="ld-img" style="background-image: url('images/pc.png');"></div>
+            <div class="profile-name">Prachi Chopra</div>
+            <div class="profile-title">Whole Time Director</div>
+            <a href="https://www.linkedin.com/in/prachi-mathur-26490b36/" target="_blank" class="btn">Know More</a>
           </div>
-          <div class="clear"></div>
-        </div>
-        <div class="block1">
-          <div id="pc" class="ld-img"> </div>
-          <div class="extra_wrapper">
-            <div class="text1"><b>Prachi Chopra</b></div>
-            Whole Time Director
-            <br><a target="_blank" href="https://www.linkedin.com/in/prachi-mathur-26490b36/" class="btn">Know
-              More...</a>
-          </div>
-          <div class="clear"></div>
-        </div>
 
-
+          <div class="profile-card">
+            <div class="ld-img" style="background-image: url('images/vg.png');"></div>
+            <div class="profile-name">Vivek Gautam</div>
+            <div class="profile-title">Whole Time Director</div>
+            <a href="https://www.linkedin.com/in/vivek-gautam-057a61349/" target="_blank" class="btn">Know More</a>
+          </div>
+        </div>
       </div>
-      <div class="grid_6 animation-right">
-        <h3 class="head1">Key Managerial Personnel</h3>
-        <!-- <div class="block1">
-          <div id="rs" alt="" class="ld-img"></div>
-          <div class="extra_wrapper">
-            <div class="text1">Ruchi Sethi</div>
-            Company Secretary
-            <br><a href="" class="btn">Know More...</a>
-
+    
+      <div class="section">
+        <h3>Team</h3>
+        <div class="profile-row">
+          <div class="profile-card">
+            <div class="ld-img" style="background-image: url('images/sp.png');"></div>
+            <div class="profile-name">Supriya Sharma</div>
+            <div class="profile-title">Assistant Vice President</div>
+            <a href="https://www.linkedin.com/in/supriya-sharma-a0012075/" target="_blank" class="btn">Know More</a>
           </div>
-          <div class="clear"></div>
-        </div> -->
-        <div class="block1">
-          <div id="sp" src="images/" alt="" class="ld-img"></div>
-          <div class="extra_wrapper">
-            <div class="text1">Supriya Sharma</div>
-            Assistant Vice President
-            <br><a target="_blank" href="https://www.linkedin.com/in/supriya-sharma-a0012075/" class="btn">Know
-              More...</a>
+    
+          <div class="profile-card">
+            <img src="images/CA2.jpeg" alt="Pragya Srivastav" />
+            <div class="profile-name">Pragya Srivastav</div>
+            <div class="profile-title">Sr. Manager – Finance & Accounts</div>
+            <a href="https://www.linkedin.com/in/pragya-srivastav" target="_blank" class="btn">Know More</a>
           </div>
-          <div class="clear"></div>
+    
+          <div class="profile-card">
+            <div class="ld-img" style="background-image: url('images/pr.png');"></div>
+            <div class="profile-name">Pratik Raj</div>
+            <div class="profile-title">Asst. Compliance Officer</div>
+            <a href="mailto:compliance@dimensionfinancial.co.in" class="btn">Know More</a>
+          </div>
+    
+          <div class="profile-card">
+            <div class="ld-img" style="background-image: url('images/ub.png');"></div>
+            <div class="profile-name">Utkarsh Bhatnagar</div>
+            <div class="profile-title">Asst. Manager – BD & Debt Placement</div>
+            <a href="https://www.linkedin.com/in/utkarsh-bhatnagar-10a00218b/" target="_blank" class="btn">Know More</a>
+          </div>
         </div>
-         
-        <div>
-          <div class="block1">
-              <img src="images/caimg.jpeg" alt="Pragya Srivastav" class="ld-img"/>
-              <div class="extra_wrapper">
-                 <div class="text1">Pragya Srivastav</div>
-                 Senior Manager Finance & Accounts
-                 <br><a target="_blank" href="https://www.linkedin.com/in/pragya-srivastav" class="btn"
->Know More..</a>               </div>
-          </div>
-       </div>
-       
-        
-        <div class="block1">
-          <div id="pr" alt="" class="ld-img"></div>
-          <div class="extra_wrapper">
-            <div class="text1">Pratik Raj</div>
-            Assitant Compliance Officer
-            <br><a href="mailto:compliance@dimensionfinancial.co.in" class="btn">Know More...</a>
-
-          </div>
-          <div class="clear"></div>
-        </div>
-
-        <div class="block1">
-          <div id="ub" alt="" class="ld-img"></div>
-          <div class="extra_wrapper">
-            <div class="text1">Utkarsh Bhatnagar</div>
-            Assistant Manager Business Development & Debt Placement
-            <br><a target="_blank" href="https://www.linkedin.com/in/utkarsh-bhatnagar-10a00218b/" class="btn">Know
-              More...</a>
-          </div>
-          <div class="clear"></div>
-        </div>
-
+      </div>
 
       </div>
 
