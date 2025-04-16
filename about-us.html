@@ -48,8 +48,8 @@
 
     .profile-card img,
     .ld-img {
-      width: 100px;
-      height: 100px;
+      width: 175px;
+      height: 195px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
@@ -97,6 +97,34 @@
         max-width: 300px;
       }
     }
+    .about-team-card {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+.team-description {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #374151;
+  padding: 0 10px;
+}
+
+.team-description strong {
+  color: #2563eb;
+}
+
 </style>
 </head>
 
@@ -238,6 +266,13 @@
     
       <div class="section">
         <h3>Team</h3>
+        
+          <div class="about-team-card">
+            <p class="team-description">
+              The team at <strong>Dimension Finacial Solution</strong> is a power-packed combination of intellectual depth, extensive experience, and incisive knowledge. Our leaders are industry experts who bring together thought leadership and experience to design intelligent solutions.
+            </p>
+          </div>
+         
         <div class="profile-row">
           <div class="profile-card">
             <div class="ld-img" style="background-image: url('images/sp.png');"></div>
@@ -270,7 +305,7 @@
         </div>
         <div class="profile-row">
           <div>
-            <div class="profile-card">
+            <div class="profile-card" style="margin-top: 6px;">
               <div class="ld-img" style="background-image: url('images/hr.jpeg');"></div>
               <div class="profile-name">Sanjeevani Rawat</div>
               <div class="profile-title">Assistant Manager HR & Administration</div>
