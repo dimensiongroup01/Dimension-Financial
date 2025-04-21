@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Dimension Financial Services</title>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="images/icon.png">
+
+	<link rel="stylesheet" href="css/camera.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.1.1.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/sForm.js"></script>
+	<script src="js/jquery.equalheights.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/camera.js"></script>
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/additional.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+		.vision-mission-section {
+	max-width: 935px;
+	margin: auto;
+	
+  }
+
+  .vision-mission-section h2 {
+	font-size: 42px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #1a237e;
+  }
+
+  .vision-mission-section p.subtitle {
+	font-size: 18px;
+	color: #455a64;
+	margin-bottom: 50px;
+  }
+
+  .vision-mission-boxes {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+  }
+
+  @media (min-width: 768px) {
+	.vision-mission-boxes {
+	  flex-direction: row;
+	}
+  }
+
+  .box {
+	flex: 1;
+	background: #ffffff;
+	padding: 40px 30px;
+	border-radius: 16px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	position: relative;
+	overflow: hidden;
+  }
+
+  .box::before {
+	content: '';
+	position: absolute;
+	top: -20%;
+	right: -20%;
+	width: 150%;
+	height: 150%;
+	background: radial-gradient(circle at top right, #e3f2fd, transparent 70%);
+	z-index: 0;
+	transition: all 0.5s ease;
+  }
+
+  .box:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .box h3 {
+	font-size: 26px;
+	color: #0d47a1;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 1;
+  }
+
+  .box p {
+	font-size: 16px;
+	color: #37474f;
+	line-height: 1.7;
+	position: relative;
+	z-index: 1;
+  }
+
+  .box.vision {
+	border-top: 6px solid #42a5f5;
+  }
+
+  .box.mission {
+	border-top: 6px solid #66bb6a;
+  }
+  .cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+ 
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #0a2552, #212388);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.mission-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.mission-list li {
+  margin-bottom: 16px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.mission-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text, .mission-list li {
+    font-size: 1rem;
+  }
+  
+}
+.whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+	.whatsapp-btn:hover {
+      background-color: #128c7e;
+    }
+	
+	
+	.sf-menu li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 10px 0;
+      min-width: 220px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+
+    .sf-menu li:hover > ul {
+      display: block;
+    }
+
+    .sf-menu li ul li {
+      width: 100%;
+    }
+
+    .sf-menu li ul li a {
+      color: #6b87e0;
+      padding: 10px 20px;
+      border-radius: 0;
+      font-weight: 400;
+    }
+
+    .sf-menu li ul li a:hover {
+      background-color: #f5f5f5;
+      color: #007bff;
+    }
+
+    .clear {
+      clear: both;
+    }
+	.fontcolor{
+		color:#007bff;
+	}
+    .career-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .career-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2a5298;
+    }
+
+    .career-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .career-form input,
+    .career-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .career-form button {
+      background: #2a5298;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .career-form button:hover {
+      background: #1e3c72;
+    }	</style>
+	<script>
+
+		$(document).ready(function () {
+			jQuery('#camera_wrap').camera({
+				loader: false,
+				pagination: false,
+				thumbnails: false,
+				height: '27.5625%',
+				minHeight: '200',
+				caption: false,
+				navigation: true,
+				fx: 'mosaic'
+			});
+		});
+		$(window).ready(function () {
+			$("#owl").owlCarousel({
+
+				navigation: true,
+				slideSpeed: 300,
+				pagination: false,
+				paginationSpeed: 400,
+				singleItem: true
+
+			});
+		});
+
+
+	</script>
+     <script>
+        document.getElementById("hrForm").addEventListener("submit", function(e) {
+          e.preventDefault();
+    
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const message = document.getElementById("message").value.trim();
+    
+          const subject = `New Contact Submission from ${name}`;
+          const body = `
+    Name: ${name}%0D%0A
+    Email: ${email}%0D%0A
+    Phone: ${phone}%0D%0A
+    Message: ${message}
+          `;
+    
+          window.location.href = `mailto:hr@dimension.co.in?subject=${encodeURIComponent(subject)}&body=${body}`;
+        });
+      </script>
+
+</head>
+<!-- SEBI registered mark on homepage -->
+
+<body class="page1" id="top">
+	<div class="top">
+		<div class="contact-top">
+			<a href="">contact@dimensionfinancial.co.in</a>
+		</div>
+		<div class="contact-top">
+			<a href="">0120-4151349</a>
+		</div>
+	</div>
+	<header>
+		<!--==============================header=================================-->
+		<div class="container_12">
+			<div style="font-family: Poppins, sans-serif;" class="grid_12">
+				<h1>
+					<div style="color: #07447D;"><img src="images/logo.svg" alt=""></div>
+
+				</h1>
+				<div class="menu_block">
+					<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+						<ul style="font-weight: 600;" class="sf-menu">
+							<li class="current"><a style="font-family: Poppins, sans-serif;" href="index.html">Home</a>
+							</li>
+							<li><a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a></li>
+							<li><a style="font-family: Poppins, sans-serif;" href="services.html"> Services</a></li>
+							<li><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a>
+								<ul>
+									<ul>
+										<li><a style="font-family: Poppins, sans-serif;" href="career.html">Carrer</a></li>
+								</ul>
+							
+							
+							</li>
+							<li><a href="career.html">Carrer</a></li>
+							
+							<!-- <li><a style="font-family: Poppins, sans-serif;" href="index-3.html">Projects</a></li> -->
+						</ul>
+					</nav>
+					
+				</div>
+			</div>
+            <div class="clear"></div>
+        <form class="career-form" action="mailto:hr@dimension.co.in" method="post" enctype="multipart/form-data">
+            <h2>Join Our Team</h2>
+            
+            <label for="name">Full Name</label>
+            <input type="text" name="name" required/>
+        
+            <label for="email">Email Address</label>
+            <input type="email" name="email" required>
+        
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" required>
+        
+            <label for="message">Message / Cover Letter</label>
+            <textarea name="message" rows="4"></textarea>
+        
+            <label for="resume">Upload Resume</label>
+            <input type="file" name="resume" required>
+        
+            <button type="submit">Submit Application</button>
+           
+            <div class="clear"></div>
+        
+          </form>
+	</header>
+                  
+  
+   <!------Career--> 
+ 
+  
+       
+	<!--==============================footer=================================-->
+	<footer>
+		<div class="container_12">
+			<div class="grid_ fright">
+				<h4>Contact Us</h4>
+				<p><a href="">contact@dimensionfinancial.co.in</a></p>
+
+			</div>
+			<div class="grid_4 fright">
+				<h4>Policies</h4>
+				<ul>
+					<li><a style="text-decoration: underline;" target="_blank"
+							href="Documents/Policies/Chinese Wall Policy.pdf">Chinese Wall Policy</a></li>
+					<li><a style="text-decoration: underline;" target="_blank"
+							href="Documents/Policies/Code of Conduct & Ethics.pdf">Code of Conduct & Ethics</a></li>
+					<li><a style="text-decoration: underline;" target="_blank"
+							href="Documents/Policies/Data Backup Storage and Security Policy.pdf">Data Backup Storage
+							and Security </a></li>
+					<li><a style="text-decoration: underline;" target="_blank"
+							href="Documents/Policies/Employees Investment Policy.pdf">Employees Investment Policy</a>
+					</li>
+					<li><a style="text-decoration: underline;" target="_blank"
+							href="Documents/Policies/Investor Compliants Redressal Mechanism Policy.pdf">Investor
+							Compliants Redressal Mechanism</a></li>
+					<li><a style="text-decoration: underline;" target="_blank"
+							href="Documents/Policies/Mandate Acceptance Criteria Policy.pdf">Mandate Acceptance
+							Criteria</a></li>
+
+					<!-- <li><a href="#">Malestreet</a></li> -->
+				</ul>
+			</div>
+
+			<!-- <div class="grid_2 fright">
+			<h4>About Us</h4>
+			<ul>
+			  <li><a href="#">Maecenas suscipit</a></li>
+			  <li><a href="#">Aliquam tincidunt</a></li>
+			  <li><a href="#">Curabitur</a></li>
+			</ul>
+		  </div> -->
+			<div class="grid_4 ">
+				<div class="copy">
+					<a href="index.html">Dimension Financial Services</a><br>
+				</div>
+				Dimension Financial Solutions Private Limited was formed by professionals
+				in field of finance and industry with an objective to provide comprehensive range of financial services
+				to
+				business enterprise in India.
+			</div>
+		</div>
+		    <!-- WhatsApp Button -->
+<a href="https://wa.me/9650703665" target="_blank">
+    <div class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> <!-- FontAwesome Icon for WhatsApp -->
+    </div>
+</a>
+<div class="clear"></div>
+	</footer>
+   
+</body>
+
+</html>

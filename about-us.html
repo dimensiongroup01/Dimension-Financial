@@ -18,6 +18,7 @@
   <script src="js/jquery.easing.1.3.js"></script>
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/additional.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script>
   </script>
 <style>
@@ -29,62 +30,101 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      margin-bottom: 40px;
     }
-
+   
     .profile-card {
+      position: relative;
+      width: 210px;
+      height: 320px;
       background-color: #fff;
+      overflow: hidden;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 200px;
-      text-align: center;
-      padding: 15px;
-      flex: 1 1 180px;
-      transition: transform 0.2s ease;
-    }
-
-    .profile-card:hover {
-      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      transition: 0.3s ease;
+      cursor: pointer;
     }
 
     .profile-card img,
-    .ld-img {
-      width: 175px;
-      height: 195px;
-      border-radius: 50%;
+    .profile-card .ld-img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      margin-bottom: 10px;
-      background-color: #ddd;
       background-size: cover;
       background-position: center;
-      display: inline-block;
+      transition: 0.4s ease;
+    }
+
+    .profile-card:hover img,
+    .profile-card:hover .ld-img {
+      filter: brightness(30%);
+      transform: scale(1.05);
+    }
+
+    .profile-info {
+      position: absolute;
+      top: 0;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.0);
+      text-align: center;
+      padding: 10px;
+      opacity: 0;
+      z-index: 2;
+      transition: opacity 0.4s ease;
+      text-align: center;
+    }
+
+    .profile-card:hover .profile-info {
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.4);
+      
     }
 
     .profile-name {
-      font-weight: bold;
-      font-size: 16px;
-      color: #222;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
     }
 
     .profile-title {
       font-size: 14px;
-      color: #555;
-      margin: 5px 0;
+      margin-bottom: 12px;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 6px 12px;
-      font-size: 14px;
+      padding: 8px 16px;
+      background-color: crimson;
       color: #fff;
-      background-color: #007bff;
-      border-radius: 6px;
       text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #0056b3;
+      background-color: darkred;
     }
+
+    @media (max-width: 600px) {
+      .profile-card {
+        width: 90%;
+      }
+    }
+    
+
+    .dfs{
+      color: #07447D;
+      font-weight: 600;
+    }
+    
 
     @media screen and (max-width: 768px) {
       .profile-row {
@@ -122,8 +162,151 @@
 }
 
 .team-description strong {
-  color: #2563eb;
+  color: #2564eb3b;
 }
+.card {
+      position: relative;
+      width: 305px;
+      background: radial-gradient(#111 50%, #000 100%);
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .ld-img {
+      width: 100%;
+      height: 350px;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .card:hover .ld-img {
+      transform: scale(1.1) translateY(-20px);
+      opacity: 0.3;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 2px;
+      text-align: center;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .textleader {
+      font-size: 22px;
+      margin-bottom: 10px;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all .3s ease-out;
+      
+    }
+    
+
+
+    .text-p {
+      font-size: 16px;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all .3s ease-out 0.2s;
+    }
+
+    .link-a {
+  position: absolute;
+  top: 65%;
+  left: 32%;
+  transform: translate(-50%, 30px);
+  opacity: 0;
+  background: crimson;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all .3s ease-out 0.4s;
+}
+
+    .link-a:hover {
+      background: rgb(95, 199, 10);
+    }
+
+    .card:hover .textleader,
+    .card:hover .text-p,
+    .card:hover .link-a {
+      transform: translateY(0);
+      opacity: 2;
+      color: bisque;
+      align-items: center;
+    }
+   
+  .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+	.whatsapp-btn:hover {
+      background-color: #128c7e;
+    }
+    .sf-menu li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 10px 0;
+      min-width: 220px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+
+    .sf-menu li:hover > ul {
+      display: block;
+    }
+
+    .sf-menu li ul li {
+      width: 100%;
+    }
+
+    .sf-menu li ul li a {
+      color: #6b87e0;
+      padding: 10px 20px;
+      border-radius: 0;
+      font-weight: 600;
+	  font-size: 15px;
+    }
+
+    .sf-menu li ul li a:hover {
+      background-color: #f5f5f5;
+      color: #007bff;
+    }
+
+    .clear {
+      clear: both;
+    }
+	.fontcolor{
+		color:#007bff;
+	}
 
 </style>
 </head>
@@ -150,9 +333,14 @@
             <ul style="font-weight: 600;" class="sf-menu">
               <li><a style="font-family: Poppins, sans-serif;" href="index.html">Home</a>
               </li>
-              <li><a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a></li>
+              <li class="current"><a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a></li>
               <li><a style="font-family: Poppins, sans-serif;" href="services.html"> Services</a></li>
-              <li><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a></li>
+              <li><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a>
+                <ul>
+                  <li><a style="font-family: Poppins, sans-serif;" href="Career.html">Career</a>
+                  </li>
+                </ul>
+              </li>
               
             </ul>
           </nav>
@@ -170,7 +358,7 @@
                 <img src="images/logo.svg" alt="" class="img_inner fleft">
                 <div class="extra_wrapper" style="color: black;">
                   <p class="text1">
-                    We are the one of the leader player of Debt & Security Market.Since inception, we are actively engaged in placement of debt securities like bonds, 
+                    We are the one of the leader player of Debt Security Market.Since inception, we are actively engaged in placement of debt securities like bonds, 
 					debentures issued by PSUs/ State level undertaking/ Corporates and as well as government 
 					securities to provident fund /superannuation trusts, corporates, educational bodies,
 					 commercial banks and High Net Worth Investors. We also assist the Provident Fund and 
@@ -232,25 +420,32 @@
         <div class="profile-row">
           
     
-          <div class="profile-card">
+          <div class="card">
             <div class="ld-img" style="background-image: url('images/rm.png');"></div>
-            <div class="profile-name">Ravi Kant Mathur</div>
-            <div class="profile-title">Whole Time Director</div>
-            <a href="https://www.linkedin.com/in/ravi-kant-mathur-b9990a15/" target="_blank" class="btn">Know More</a>
+            <div class="overlay">
+              <h1 class="textleader">Ravi Kant Mathur</h1>
+              <p class="text-p"><b>Whole Time Director</b> <br/> Having Experience more than 23 Years in Financial Services</p>
+              <a class="link-a" href="https://www.linkedin.com/in/ravi-kant-mathur-b9990a15/" target="_blank">Know More</a>
+            </div>
           </div>
-    
-          <div class="profile-card">
-            <div class="ld-img" style="background-image: url('images/pc.png');"></div>
-            <div class="profile-name">Prachi Chopra</div>
-            <div class="profile-title">Whole Time Director</div>
-            <a href="https://www.linkedin.com/in/prachi-mathur-26490b36/" target="_blank" class="btn">Know More</a>
+      
+          <div class="card">
+            <div class="ld-img" style="background-image: url('./images/pc.png');"></div>
+            <div class="overlay">
+              <h1 class="textleader">Prachi Chopra</h1>
+              <p class="text-p"><b>Whole Time Director</b><br/> Having Experience more than 22 Years in Human Resources Management</p>
+              
+              <a class="link-a" href="https://www.linkedin.com/in/prachi-mathur-26490b36/" target="_blank">Know More</a>
+            </div>
           </div>
-
-          <div class="profile-card">
+      
+          <div class="card">
             <div class="ld-img" style="background-image: url('images/vg.png');"></div>
-            <div class="profile-name">Vivek Gautam</div>
-            <div class="profile-title">Whole Time Director</div>
-            <a href="https://www.linkedin.com/in/vivek-gautam-057a61349/" target="_blank" class="btn">Know More</a>
+            <div class="overlay">
+              <h1 class="textleader">Vivek Gautam</h1>
+              <p class="text-p"><b>Whole Time Director</b> <br/> Having Experience more than 32 Years in Merchant Banking </p>
+              <a class="link-a" href="https://www.linkedin.com/in/vivek-gautam-057a61349/" target="_blank">Know More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -260,48 +455,86 @@
         
           <div class="about-team-card">
             <p class="team-description">
-              The team at <strong>Dimension Finacial Solution</strong> is a power-packed combination of intellectual depth, extensive experience, and incisive knowledge. Our leaders are industry experts who bring together thought leadership and experience to design intelligent solutions.
+              The team at <span class="dfs">Dimension Finacial Solution</span> is a power-packed combination of intellectual depth, extensive experience, and incisive knowledge. Our leaders are industry experts who bring together thought leadership and experience to design intelligent solutions.
             </p>
           </div>
          
-        <div class="profile-row">
-          <div class="profile-card">
-            <div class="ld-img" style="background-image: url('images/sp.png');"></div>
-            <div class="profile-name">Supriya Sharma</div>
-            <div class="profile-title">Assistant Vice President</div>
-            <a href="https://www.linkedin.com/in/supriya-sharma-a0012075/" target="_blank" class="btn">Know More</a>
+          <div class="profile-row">
+            <div class="profile-card">
+              <div class="ld-img" style="background-image: url('images/ss.png');"></div>
+              <div class="profile-info">
+                <div class="profile-name">Supriya Sharma</div>
+                <div class="profile-title">Assistant Vice President</div>
+                <a href="https://www.linkedin.com/in/supriya-sharma-a0012075/" target="_blank" class="btn">Know More</a>
+              </div>
+            </div>
+        
+            <div class="profile-card">
+             <div class="ld-img" style="background-image: url('images/CA2.jpeg');"> </div>
+              <div class="profile-info">
+                <div class="profile-name">Pragya Srivastav</div>
+                <div class="profile-title">Sr. Manager - Finance & Accounts</div>
+                <a href="https://www.linkedin.com/in/pragya-srivastav" target="_blank" class="btn">Know More</a>
+              </div>
+            </div>
+        
+            <div class="profile-card">
+              <div class="ld-img" style="background-image: url('images/shloknew.png');"> </div>
+              <div class="profile-info">
+                <div class="profile-name">Shlok Shah</div>
+                <div class="profile-title">Sr. Software Developer</div>
+                <a href="https://www.linkedin.com/in/shlok-shah-596b521a2?trk=people-search-result" target="_blank" class="btn">Know More</a>
+              </div>
+            </div>
+        
+            <div class="profile-card">
+              <div class="ld-img" style="background-image: url('images/pr.png');"></div>
+              <div class="profile-info">
+                <div class="profile-name">Pratik Raj</div>
+                <div class="profile-title">Asst. Compliance Officer</div>
+                <a href="mailto:compliance@dimensionfinancial.co.in" class="btn">Know More</a>
+              </div>
+            </div>
           </div>
-    
-          <div class="profile-card">
-            <img src="images/CA2.jpeg" alt="Pragya Srivastav" />
-            <div class="profile-name">Pragya Srivastav</div>
-            <div class="profile-title">Sr. Manager - Finance & Accounts</div>
-            <a href="https://www.linkedin.com/in/pragya-srivastav" target="_blank" class="btn">Know More</a>
-          </div>
-    
-          <div class="profile-card">
-            <div class="ld-img" style="background-image: url('images/pr.png');"></div>
-            <div class="profile-name">Pratik Raj</div>
-            <div class="profile-title">Asst. Compliance Officer</div>
-            <a href="mailto:compliance@dimensionfinancial.co.in" class="btn">Know More</a>
-          </div>
-    
-          <div class="profile-card">
-            <div class="ld-img" style="background-image: url('images/ub.png');"></div>
-            <div class="profile-name">Utkarsh Bhatnagar</div>
-            <div class="profile-title">Asst. Manager - BD & Debt Placement</div>
-            <a href="https://www.linkedin.com/in/utkarsh-bhatnagar-10a00218b/" target="_blank" class="btn">Know More</a>
+        
+          <div class="profile-row">
+            <div class="profile-card">
+              <div class="ld-img" style="background-image: url('images/ub.png');"></div>
+              <div class="profile-info">
+                <div class="profile-name">Utkarsh Bhatnagar</div>
+                <div class="profile-title">Asst. Manager - BD & Debt Placement</div>
+                <a href="https://www.linkedin.com/in/utkarsh-bhatnagar-10a00218b/" target="_blank" class="btn">Know More</a>
+              </div>
+            </div>
+          
+            <div class="profile-card">
+              <img src="images/arjun.png" alt="Pragya Srivastav" />
+              <div class="profile-info">
+                <div class="profile-name">Arjun Singh</div>
+                <div class="profile-title"> Manager - Finance & Accounts</div>
+                <a href="https://www.linkedin.com/in/pragya-srivastav" target="_blank" class="btn">Know More</a>
+              </div>
+            </div>
+          
+            <div class="profile-card">
+              <div class="ld-img" style="background-image: url('images/pv.png');"></div>
+              <div class="profile-info">
+                <div class="profile-name">Pratik Vishwakarma</div>
+                <div class="profile-title">Frontend Developer  </div>
+                <a href="https://www.linkedin.com/in/pratik-vishwakarma-962838193" target="_blank"  class="btn">Know More</a>
+              </div>
+            </div>
+          
+            <div class="profile-card">
+              <div class="ld-img" style="background-image: url('images/hr.jpeg');"></div>
+              <div class="profile-info">
+                <div class="profile-name">Sanjeevani Rawat</div>
+                <div class="profile-title">Assistant Manager HR & Administration</div>
+                <a href="https://www.linkedin.com/in/sanjeevani212" target="_blank" class="btn">Know More</a>
+              </div>
+            </div>
           </div>
           
-        </div>
-        <div class="profile-row">
-          <div>
-            <div class="profile-card" style="margin-top: 6px;">
-              <div class="ld-img" style="background-image: url('images/hr.jpeg');"></div>
-              <div class="profile-name">Sanjeevani Rawat</div>
-              <div class="profile-title">Assistant Manager HR & Administration</div>
-              <a href="https://www.linkedin.com/in/sanjeevani212" target="_blank" class="btn">Know More</a>
-            </div>
           </div>
         </div>
       </div>
@@ -357,6 +590,11 @@
         business enterprise in India.
       </div>
     </div>
+      <!-- WhatsApp Button -->
+<a href="https://wa.me/9650703665" target="_blank">
+  <div class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> <!-- FontAwesome Icon for WhatsApp -->
+  </div>
   </footer>
 </body>
 
