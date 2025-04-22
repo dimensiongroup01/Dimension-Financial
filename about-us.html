@@ -164,15 +164,7 @@
 .team-description strong {
   color: #2564eb3b;
 }
-.card {
-      position: relative;
-      width: 305px;
-      background: radial-gradient(#111 50%, #000 100%);
-      overflow: hidden;
-      border-radius: 15px;
-      cursor: pointer;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
+
 
     .ld-img {
       width: 100%;
@@ -182,67 +174,21 @@
       transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     }
 
-    .card:hover .ld-img {
-      transform: scale(1.1) translateY(-20px);
-      opacity: 0.3;
-    }
+ 
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      padding: 2px;
-      text-align: center;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .textleader {
-      font-size: 22px;
-      margin-bottom: 10px;
-      transform: translateY(30px);
-      opacity: 0;
-      transition: all .3s ease-out;
-      
-    }
+   
+   
     
 
 
-    .text-p {
-      font-size: 16px;
-      transform: translateY(30px);
-      opacity: 0;
-      transition: all .3s ease-out 0.2s;
-    }
+    
 
-    .link-a {
-  position: absolute;
-  top: 65%;
-  left: 32%;
-  transform: translate(-50%, 30px);
-  opacity: 0;
-  background: crimson;
-  color: #fff;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  transition: all .3s ease-out 0.4s;
-}
-
-    .link-a:hover {
-      background: rgb(95, 199, 10);
-    }
-
-    .card:hover .textleader,
+    
     .card:hover .text-p,
     .card:hover .link-a {
       transform: translateY(0);
       opacity: 2;
-      color: bisque;
+      
       align-items: center;
     }
    
@@ -308,6 +254,119 @@
 		color:#007bff;
 	}
 
+  <!-----New Design-->
+  .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      width: 300px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .ld-img {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .textleader {
+      font-size: 20px;
+      color: #2a5298;
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+
+    .text-p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .link-a, .modal-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 16px;
+      background: #2a5298;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .link-a:hover, .modal-btn:hover {
+      background: #1e3c72;
+    }
+
+    /* Modal Styling */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 700px;
+      position: relative;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #aaa;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+    @media (max-width: 768px) {
+    .ld-img
+     {
+      height: 320px;
+    }
+  }
+
+    @media screen and (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
 </style>
 </head>
 
@@ -336,10 +395,7 @@
               <li class="current"><a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a></li>
               <li><a style="font-family: Poppins, sans-serif;" href="services.html"> Services</a></li>
               <li><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a>
-                <ul>
-                  <li><a style="font-family: Poppins, sans-serif;" href="Career.html">Career</a>
-                  </li>
-                </ul>
+                
               </li>
               
             </ul>
@@ -359,14 +415,18 @@
                 <div class="extra_wrapper" style="color: black;">
                   <p class="text1">
                     Our Company is presently engaged in placement of debt securities like bonds, debentures to PF Trusts & Superannuation Trusts of Public Sector Undertakings and Corporates, Education Institutions, Finance companies, Individual Investors, etc. We have track record of regularly dealing with such clients and we get regular orders and queries from them for their requirements of debt securities. etc <br/>We are SEBI registered Stock Broker with registration number INZ000313233 and BSE registered Trading Member on New Debt Segment .We are also an Online Bond Platform Providers (OBPPs) member of debt market segment at BSE.<br/>
-					
-					
-                    <p class="text1"><b>Our Promoter and Director Mr. Ravi Kant Mathur</b> has experience of approximate 23 years in financial services, merchant banking & Debt securities market. Prior to promoting Dimension Financial, he has worked with Bajaj Capital Ltd for 3 years in Merchant Banking, Marketing of public issue of equity & bonds and private placement of debt securities issued by public sector undertakings and state government undertakings. Thereafter, he worked as Asst Vice President in SPA Merchant Bankers Limited (Now SPA Capital Advisors Limited) in merchant banking division handling public issues of both debt & equity and as well as private placement of debt securities. He has experience in preparation of offer documents as well as in marketing of issues and distribution of financial product</br></p ><p class="text1"><b>Smt. Prachi Chopra, Promoter & Director</b> has experience of more than 22 years of experience in providing insurance services to individuals & corporates and Human Resource Management. Prior to promoting Dimension Financial Solutions Private Limited, she has worked with Bajaj Capital Limited and Aviva life insurance in various positions in life insurance department and ICICI Prudential Life Insurance company Ltd as area manager- Sales training<br/></p><p class="text1"><b>Mr. Vivek Gautam, Director,</b> has more than 32 years of experience in Merchant Banking including management of public issues of equity and debt, right issues, private placement of debt securities, managing open offer, buyback offer, delisting and as well as advisors on corporate restructuring including mergers, demergers & acquisitions. Further, he has vast experience of advisory and capital restructuring. He has worked in senior positions handling Merchant Banking assignments with prestigious Bankers like PNB Capital Services Limited, Bajaj Capital Limited, SPA Capital Advisor Limited & SMC Capitals Limited etc.<br/>We are preparing to enter ino Business of Mercahnt Banking after getting Approval of registration.
                   </p>
-                  <div class="clear"></div>
                 </div>
               </div>
-              <div class="grid_12 animation-left">
+              
+					
+					
+                    <!--  <p class="text1"><b>Our Promoter and Director Mr. Ravi Kant Mathur</b> has experience of approximate 23 years in financial services, merchant banking & Debt securities market. Prior to promoting Dimension Financial, he has worked with Bajaj Capital Ltd for 3 years in Merchant Banking, Marketing of public issue of equity & bonds and private placement of debt securities issued by public sector undertakings and state government undertakings. Thereafter, he worked as Asst Vice President in SPA Merchant Bankers Limited (Now SPA Capital Advisors Limited) in merchant banking division handling public issues of both debt & equity and as well as private placement of debt securities. He has experience in preparation of offer documents as well as in marketing of issues and distribution of financial product</br></p ><p class="text1"><b>Smt. Prachi Chopra, Promoter & Director</b> has experience of more than 22 years of experience in providing insurance services to individuals & corporates and Human Resource Management. Prior to promoting Dimension Financial Solutions Private Limited, she has worked with Bajaj Capital Limited and Aviva life insurance in various positions in life insurance department and ICICI Prudential Life Insurance company Ltd as area manager- Sales training<br/></p><p class="text1"><b>Mr. Vivek Gautam, Director,</b> has more than 32 years of experience in Merchant Banking including management of public issues of equity and debt, right issues, private placement of debt securities, managing open offer, buyback offer, delisting and as well as advisors on corporate restructuring including mergers, demergers & acquisitions. Further, he has vast experience of advisory and capital restructuring. He has worked in senior positions handling Merchant Banking assignments with prestigious Bankers like PNB Capital Services Limited, Bajaj Capital Limited, SPA Capital Advisor Limited & SMC Capitals Limited etc.<br/>We are preparing to enter ino Business of Mercahnt Banking after getting Approval of registration.
+                  </p>
+                  <div class="clear"></div>
+                </div> -->
+              
+              <!-- <div class="grid_12 animation-left">
                   <h3 class="head1">Our Mission</h3>
                      <ul class="list">
                         <li>
@@ -406,7 +466,7 @@
                           </li>
                         </ul>
                 </div>
-                <div class="clear"></div>
+                <div class="clear"></div> -->
     
       
       <div class="section">
@@ -414,35 +474,102 @@
         <div class="profile-row">
           
     
-          <div class="card">
-            <div class="ld-img" style="background-image: url('images/rm.png');"></div>
-            <div class="overlay">
-              <h1 class="textleader">Ravi Kant Mathur</h1>
-              <p class="text-p"><b>Whole Time Director</b> <br/> Having Experience more than 23 Years in Financial Services</p>
-              <a class="link-a" href="https://www.linkedin.com/in/ravi-kant-mathur-b9990a15/" target="_blank">Know More</a>
+          <div class="card-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+
+            <!-- Ravi Kant Mathur -->
+            <div class="card">
+              <div class="ld-img" style="background-image: url('images/rm.png');"></div>
+              <div class="overlay">
+                <h1 class="textleader">Ravi Kant Mathur</h1>
+                <p class="text-p"><b>Whole Time Director</b><br/> Having Experience more than 23 Years in Financial Services</p>
+                <button class="modal-btn" onclick="openModal()">Know More</button>
+              </div>
             </div>
-          </div>
-      
-          <div class="card">
-            <div class="ld-img" style="background-image: url('./images/pc.png');"></div>
-            <div class="overlay">
-              <h1 class="textleader">Prachi Chopra</h1>
-              <p class="text-p"><b>Whole Time Director</b><br/> Having Experience more than 22 Years in Human Resources Management</p>
-              
-              <a class="link-a" href="https://www.linkedin.com/in/prachi-mathur-26490b36/" target="_blank">Know More</a>
+        
+            <!-- Prachi Chopra -->
+            <div class="card">
+              <div class="ld-img" style="background-image: url('images/pc.png');"></div>
+              <div class="overlay">
+                <h1 class="textleader">Prachi Chopra</h1>
+                <p class="text-p"><b>Whole Time Director</b><br/> Having Experience more than 22 Years in Human Resources Management</p>
+                <a class="link-a" href="javascript:void(0);" onclick="openModalPrachi()">Know More</a>
+        
+              </div>
             </div>
-          </div>
-      
-          <div class="card">
-            <div class="ld-img" style="background-image: url('images/vg.png');"></div>
-            <div class="overlay">
-              <h1 class="textleader">Vivek Gautam</h1>
-              <p class="text-p"><b>Whole Time Director</b> <br/> Having Experience more than 32 Years in Merchant Banking </p>
-              <a class="link-a" href="https://www.linkedin.com/in/vivek-gautam-057a61349/" target="_blank">Know More</a>
+        
+            <!-- Vivek Gautam -->
+            <div class="card">
+              <div class="ld-img" style="background-image: url('images/vg.png');"></div>
+              <div class="overlay">
+                <h1 class="textleader">Vivek Gautam</h1>
+                <p class="text-p"><b>Whole Time Director</b><br/> Having Experience more than 32 Years in Merchant Banking</p>
+               <a class="link-a" href="javascript:void(0);" onclick="openModalVivek()">Know More</a>
+        
+              </div>
             </div>
+        
           </div>
         </div>
-      </div>
+        
+         
+          <!-- Modal for Ravi Kant Mathur -->
+        <div id="bioModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+            <!-- Profile Image -->
+            <div style="text-align: center; margin-bottom: 20px;">
+              <img src="images/rm.png" alt="Ravi Kant Mathur" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            </div>
+        
+            <!-- Profile Text -->
+            <h2 style="text-align: center; color: #2a5298;">Ravi Kant Mathur</h2>
+            <p class="text-p">
+              <b>Our Promoter and Director Mr. Ravi Kant Mathur</b> has experience of approximately 23 years in financial services, merchant banking & debt securities market. Prior to promoting Dimension Financial, he worked with Bajaj Capital Ltd for 3 years in Merchant Banking, Marketing of public issue of equity & bonds and private placement of debt securities issued by public sector undertakings and state government undertakings. Thereafter, he worked as Asst Vice President in SPA Merchant Bankers Limited (Now SPA Capital Advisors Limited) in merchant banking division handling public issues of both debt & equity and private placement of debt securities. He has experience in preparation of offer documents as well as in marketing of issues and distribution of financial products.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Modal for Prachi Chopra -->
+        <div id="bioModalPrachi" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModalPrachi()">&times;</span>
+            
+            <!-- Profile Image -->
+            <div style="text-align: center; margin-bottom: 20px;">
+              <img src="images/pc.png" alt="Prachi Chopra" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            </div>
+        
+            <!-- Profile Text -->
+            <h2 style="text-align: center; color: #2a5298;">Prachi Chopra</h2>
+            <p class="text-p">
+              <b>Smt. Prachi Chopra, Promoter & Director</b>, has experience of more than 22 years in providing insurance services to individuals & corporates and Human Resource Management. Prior to promoting Dimension Financial Solutions Private Limited, she worked with Bajaj Capital Limited and Aviva Life Insurance in various positions in the life insurance department, and ICICI Prudential Life Insurance Company Ltd as Area Manager - Sales Training.
+            </p>
+          </div>
+        </div>
+        <!-- Modal for Vivek Gautam -->
+        <div id="bioModalVivek" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModalVivek()">&times;</span>
+        
+            <!-- Profile Image -->
+            <div style="text-align: center; margin-bottom: 20px;">
+              <img src="images/vg.png" alt="Vivek Gautam" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            </div>
+        
+            <h2 style="text-align: center; color: #2a5298;">Vivek Gautam</h2>
+            <p class="text-p">
+              <b>Mr. Vivek Gautam, Director,</b> has more than 32 years of experience in Merchant Banking including management of public issues of equity and debt, right issues, private placement of debt securities, managing open offer, buyback offer, delisting and as well as advisors on corporate restructuring including mergers, demergers & acquisitions. Further, he has vast experience of advisory and capital restructuring. He has worked in senior positions handling Merchant Banking assignments with prestigious Bankers like PNB Capital Services Limited, Bajaj Capital Limited, SPA Capital Advisor Limited & SMC Capitals Limited etc.
+            </p>
+            
+          </div>
+        </div>
+        
+        
+        
+        
+         
     
       <div class="section">
         <h3>Team</h3>
@@ -455,78 +582,64 @@
          
           <div class="profile-row">
             <div class="profile-card">
-              <div class="ld-img" style="background-image: url('images/ss.png');"></div>
-              <div class="profile-info">
-                <div class="profile-name">Supriya Sharma</div>
-                <div class="profile-title">Assistant Vice President</div>
-                <a href="https://www.linkedin.com/in/supriya-sharma-a0012075/" target="_blank" class="btn">Know More</a>
+              <div class="ld-img" style="background-image: url('images/ss.png'); height: 250px; background-size: cover; background-position: center;"></div>
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: #2a5298;">Supriya Sharma</div>
               </div>
             </div>
-        
+            
             <div class="profile-card">
-             <div class="ld-img" style="background-image: url('images/CA2.jpeg');"> </div>
-              <div class="profile-info">
-                <div class="profile-name">Pragya Srivastav</div>
-                <div class="profile-title">Sr. Manager - Finance & Accounts</div>
-                <a href="https://www.linkedin.com/in/pragya-srivastav" target="_blank" class="btn">Know More</a>
+              <div class="ld-img" style="background-image: url('images/CA2.jpeg'); height: 250px; background-size: cover; background-position: center;"></div>
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: #2a5298;">Pragya Srivastav</div>
               </div>
             </div>
-        
+            
             <div class="profile-card">
-              <div class="ld-img" style="background-image: url('images/shloknew.png');"> </div>
-              <div class="profile-info">
-                <div class="profile-name">Shlok Shah</div>
-                <div class="profile-title">Sr. Software Developer</div>
-                <a href="https://www.linkedin.com/in/shlok-shah-596b521a2?trk=people-search-result" target="_blank" class="btn">Know More</a>
+              <div class="ld-img" style="background-image: url('images/shloknew.png'); height: 250px; background-size: cover; background-position: center;"></div>
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: #2a5298;">Shlok Shah</div>
               </div>
             </div>
-        
+            
             <div class="profile-card">
-              <div class="ld-img" style="background-image: url('images/pr.png');"></div>
-              <div class="profile-info">
-                <div class="profile-name">Pratik Raj</div>
-                <div class="profile-title">Asst. Compliance Officer</div>
-                <a href="mailto:compliance@dimensionfinancial.co.in" class="btn">Know More</a>
+              <div class="ld-img" style="background-image: url('images/pr.png'); height: 250px; background-size: cover; background-position: center;"></div>
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: #2a5298;">Pratik Raj</div>
               </div>
             </div>
+            
           </div>
         
           <div class="profile-row">
             <div class="profile-card">
-              <div class="ld-img" style="background-image: url('images/ub.png');"></div>
-              <div class="profile-info">
-                <div class="profile-name">Utkarsh Bhatnagar</div>
-                <div class="profile-title">Asst. Manager - BD & Debt Placement</div>
-                <a href="https://www.linkedin.com/in/utkarsh-bhatnagar-10a00218b/" target="_blank" class="btn">Know More</a>
+              <div class="ld-img" style="background-image: url('images/ub.png'); height: 250px; background-size: cover; background-position: center;"></div>
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: #2a5298;">Utkarsh Bhatnagar</div>
               </div>
             </div>
-          
+            
             <div class="profile-card">
-              <img src="images/arjun.png" alt="Arjun Singh" />
-              <div class="profile-info">
-                <div class="profile-name">Arjun Singh</div>
-                <div class="profile-title"> Manager - Finance & Accounts</div>
-                <a href="https://www.linkedin.com/in/pragya-srivastav" target="_blank" class="btn">Know More</a>
+              <img src="images/arjun.png" alt="Arjun Singh" style="width: 100%; height: 250px; object-fit: cover;" />
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: #2a5298;">Arjun Singh</div>
               </div>
             </div>
-          
+            
             <div class="profile-card">
-              <div class="ld-img" style="background-image: url('images/pv.png');"></div>
-              <div class="profile-info">
-                <div class="profile-name">Pratik Vishwakarma</div>
-                <div class="profile-title">Frontend Developer  </div>
-                <a href="https://www.linkedin.com/in/pratik-vishwakarma-962838193" target="_blank"  class="btn">Know More</a>
+              <div class="ld-img" style="background-image: url('images/pv.png'); height: 250px; background-size: cover; background-position: center;"></div>
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: #2a5298;">Pratik Vishwakarma</div>
               </div>
             </div>
-          
+            
             <div class="profile-card">
-              <div class="ld-img" style="background-image: url('images/hr.jpeg');"></div>
-              <div class="profile-info">
-                <div class="profile-name">Sanjeevani Rawat</div>
-                <div class="profile-title">Assistant Manager HR & Administration</div>
-                <a href="https://www.linkedin.com/in/sanjeevani212" target="_blank" class="btn">Know More</a>
+              <div class="ld-img" style="background-image: url('images/hr.jpeg'); height: 250px; background-size: cover; background-position: center;"></div>
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 18px; font-weight: 600; color: #2a5298;">Sanjeevani Rawat</div>
               </div>
             </div>
+            
           </div>
           
           </div>
@@ -590,6 +703,54 @@
       <i class="fab fa-whatsapp"></i> <!-- FontAwesome Icon for WhatsApp -->
   </div>
   </footer>
+  <script>
+    function openModal() {
+      document.getElementById('bioModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('bioModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('bioModal');
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+  function openModalPrachi() {
+    document.getElementById('bioModalPrachi').style.display = 'block';
+  }
+
+  function closeModalPrachi() {
+    document.getElementById('bioModalPrachi').style.display = 'none';
+  }
+
+  // Optional: close modal on outside click
+  window.onclick = function(event) {
+    const prachiModal = document.getElementById('bioModalPrachi');
+    if (event.target == prachiModal) {
+      prachiModal.style.display = "none";
+    }
+  }
+ 
+  function openModalVivek() {
+    document.getElementById('bioModalVivek').style.display = 'block';
+  }
+
+  function closeModalVivek() {
+    document.getElementById('bioModalVivek').style.display = 'none';
+  }
+
+  // Optional: close modal on outside click
+  window.onclick = function(event) {
+    const vivekModal = document.getElementById('bioModalVivek');
+    if (event.target == vivekModal) {
+      vivekModal.style.display = "none";
+    }
+  }
+</script>
 </body>
 
 </html>
