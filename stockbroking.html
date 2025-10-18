@@ -2,8 +2,29 @@
 <html lang="en">
 
 <head>
-  <title>Services</title>
+  <title>Dimension Financial Solutions | Debt Placement, Equity Capital Market & M&A Advisory</title>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no" />
+  <!-- Responsive Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Page Description & Keywords -->
+  <meta name="description" content="Explore Dimension Financial Solutions’ range of financial services — from debt placement, IPO management, and equity capital market solutions to mergers, acquisitions, and business valuation services.">
+  <meta name="keywords" content="Debt Placement India, Bond Advisory, Equity Capital Market Services, IPO Management, M&A Advisory, Corporate Finance Solutions, Debt Syndication, Business Valuation">
+  <meta name="author" content="Dimension Financial Solutions">
+  <link rel="canonical" href="https://dimensionfinancial.co.in/stockbroking.html" />
+  <!-- Favicon -->
+  <link rel="icon" href="images/icon.png" type="image/png">
+  
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dimension Financial Solutions - Services">
+  <meta name="twitter:description" content="Providing Stock Broking, Merchant Banking, Debt & Equity Advisory services.">
+  <meta name="twitter:image" content="images/logo.svg">
+  <meta name="twitter:site" content="@DimensionFinance">
+  
+  <!-- Disable automatic detection of phone numbers on iOS -->
   <meta name="format-detection" content="telephone=no" />
 	<link rel="icon" href="images/icon.png">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +45,7 @@
       bottom: 20px;
       right: 20px;
       background-color: #25D366;
-      color: white;
+      color: white; 
       border: none;
       padding: 15px 20px;
       border-radius: 50px;
@@ -97,6 +118,40 @@
       text-decoration: none;
       color: #fff;
     }
+      .sf-menu li {
+    position: relative;
+  }
+
+  .sf-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px 0;
+    list-style: none;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .sf-menu .submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #2a5298;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .sf-menu .submenu li a:hover {
+    background: #f0f0f0;
+    color: #000;
+  }
+
+  .sf-menu .submenu.show {
+    display: block;
+  }
 </style>
   <script>
 
@@ -142,20 +197,19 @@
 							</li>
 							<li><a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a></li>
 							<!-- Dropdown for Services -->
-              <li class="has-submenu current">
-                <a style="font-family: Poppins, sans-serif; cursor: pointer;">Services ▾</a>
-                <ul class="submenu">
-                  <li><a style="font-family: Poppins, sans-serif;" href="stockbroking.html">Stock Broking</a></li>
-                  <li><a style="font-family: Poppins, sans-serif;" href="merchantbanking.html">Merchant Banking</a></li>
-                </ul>
-              </li>
-
-							<li><a style="font-family: Poppins, sans-serif;" href="Career.html">Career</a></li>
+                            <li class="has-submenu">
+                                <a style="font-family: Poppins, sans-serif; cursor: pointer;">Services ▾</a>
+                                <ul class="submenu">
+                                <li><a style="font-family: Poppins, sans-serif;" href="merchantbanking.html">Merchant Banking</a></li>
+                                <li><a style="font-family: Poppins, sans-serif;" href="stockbroking.html">Stock Broking</a></li>
+                                
+                                </ul>
+                            </li>
 							<li><a style="font-family: Poppins, sans-serif;" href="annual.html"> Investor Corner </a></li>
 							<li><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a>
+								
 
-
-
+							
 							</li>
 						
 							
@@ -248,7 +302,7 @@
 	</div>
 
 
-  <a href="merchantbanking.html" class="btn-finance">Merchant Banking</a>
+  
 
 <!---Advising on raising of resources for Corporates via Debt & Equity.-->
   <!--==============================footer=================================-->
@@ -299,6 +353,21 @@
       <i class="fab fa-whatsapp"></i> <!-- FontAwesome Icon for WhatsApp -->
   </div>
   </footer>
+  <script>
+		 const contactToggle = document.getElementById("contact-toggle");
+  const dropdownLi = document.getElementById("contact-li");
+
+  contactToggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownLi.classList.toggle("show-dropdown");
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!dropdownLi.contains(e.target)) {
+      dropdownLi.classList.remove("show-dropdown");
+    }
+  });
+	</script>
 </body>
 
 </html>

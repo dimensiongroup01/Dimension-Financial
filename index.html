@@ -16,7 +16,7 @@
    
   <!-- Open Graph Meta Tags for Social Sharing -->
    <meta name="google-site-verification" content="-g53SD87AjpUIWm2vIg3Pt5oxZWU4H-3jnj_NzxhFO0" />
-  <meta property="og:title" content="Dimension Financial | Trusted Bond Investment Partner" />
+  <meta property="og:title" content="Dimension Financial Solutions | Trusted Bond Investment Partner" />
   <meta property="og:description" content="SEBI-registered firm offering debt securities, bonds, and investment advisory services tailored for corporates, HNIs, and PF trusts." />
   <meta property="og:url" content="https://dimensionfinancial.co.in/" />
   <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics --> 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0PTLLVV2V"></script>
   <script>
@@ -263,9 +263,7 @@
       z-index: 999;
     }
 
-    .sf-menu li:hover > ul {
-      display: block;
-    }
+
 
     .sf-menu li ul li {
       width: 100%;
@@ -290,6 +288,68 @@
 	.fontcolor{
 		color:#007bff;
 	}
+	.category-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.category-card a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-card img {
+  width: 100%;
+  height: 180px; /* keeps all images same height */
+  object-fit: contain; /* keeps aspect ratio */
+  margin-bottom: 10px;
+}
+.category-card .text1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+}
+.category-card a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 6px;
+}
+
+  .sf-menu li {
+    position: relative;
+  }
+
+  .sf-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px 0;
+    list-style: none;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .sf-menu .submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #2a5298;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .sf-menu .submenu li a:hover {
+    background: #f0f0f0;
+    color: #000;
+  }
+
+  .sf-menu .submenu.show {
+    display: block;
+  }
 	</style>
 	<script>
 
@@ -341,25 +401,44 @@
 
 				</h1>
 				<div class="menu_block">
-					<nav class="horizontal-nav full-width horizontalNav-notprocessed">
-						<ul style="font-weight: 600;" class="sf-menu">
-							<li class="current"><a style="font-family: Poppins, sans-serif;" href="index.html">Home</a>
-							</li>
-							<li><a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a></li>
-							<li><a style="font-family: Poppins, sans-serif;" href="services.html"> Services</a></li>
-							<li><a style="font-family: Poppins, sans-serif;" href="annual.html"> Investor Corner </a></li>
-							<li><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a>
-								
+  <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+    <ul style="font-weight: 600;" class="sf-menu">
+      <li class="current">
+        <a style="font-family: Poppins, sans-serif;" href="index.html">Home</a>
+      </li>
+      <li>
+        <a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a>
+      </li>
+      
+      <!-- Dropdown for Services -->
+      <li class="has-submenu">
+        <a style="font-family: Poppins, sans-serif; cursor: pointer;">Services ▾</a>
+        <ul class="submenu">
+			<li><a style="font-family: Poppins, sans-serif;" href="merchantbanking.html">Merchant Banking</a></li>
+          <li><a style="font-family: Poppins, sans-serif;" href="stockbroking.html">Stock Broking</a></li>
+          
+        </ul>
+      </li>
+      <!-- <li>
+        <a style="font-family: Poppins, sans-serif;" href="Career.html">Career</a>
+      </li> -->
+      <li>
+        <a style="font-family: Poppins, sans-serif;" href="annual.html">Investor Corner</a>
+      </li>
+      <li>
+        <a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="clear"></div>
+</div>
 
-							
-							</li>
-						
-							
-							<!-- <li><a style="font-family: Poppins, sans-serif;" href="index-3.html">Projects</a></li> -->
-						</ul>
-					</nav>
-					<div class="clear"></div>
-				</div>
+
+
+<!-- CSS -->
+
+
+
 			</div>
 		</div>
 
@@ -374,11 +453,9 @@
 				FINANCIAL SOLUTIONS
 			</p>
 			<br> <br>
-			<p style="font-size: 32px;">Innovating Every Dimension of
-				<br>
-				<br>
-				<!-- <br> -->
-				Financial Growth
+			<p style="font-size: 32px;">Merchant Banking  | Debt Securities
+				
+				
 			</p>
 
 		</div>
@@ -677,92 +754,54 @@
 
 
 		<div class="container_12">
-			<div class="grid_12 animation-scroll">
-				<div >
-					<h3 ><a class="logo-fl" href="www.bondsadda.com">Bonds Adda 
-					<img id="logo-img" src="images/logo (1).png" alt="">
-					</a> </h3> 
-				</div>
-			</div>
-			<div class="grid_3">
-				<img src="images/1.jpg" loading="lazy" alt="" class="img_inner lazy">
-				<div class="text1 upp"><a href="#">Government Securities</a></div>
-			</div>
-			<div class="grid_3">
-				<img src="images/2.jpg" loading="lazy" alt="" class="img_inner lazy">
-				<div class="text1 upp"><a href="#">PSU Bonds</a></div>
-			</div>
-			<div class="grid_3">
-				<img src="images/4.jpg" loading="lazy" alt="" class="img_inner lazy">
-				<div class="text1 upp"><a href="#">Tax Free Bonds</a></div>
-			</div>
-			<div class="grid_3">
-				<img src="images/3.jpg" loading="lazy" alt="" class="img_inner lazy">
-				<div class="text1 upp"><a href="#">Capital Gain (54EC)</a></div>
-			</div>
-			<div class="grid_12">
-				<div class="hor"></div>
-			</div>
-			<!-- <div class="grid_8">
-        <h3>RECENT POSTS</h3>
-        <div class="grid_4 alpha">
-          <div class="blog_img">
-            <img src="images/page1_img5.jpg" alt="">
-            <time datetime="2013-01-01">26<span>apr</span></time>
-          </div>
-          <div class="text1 upp"><a href="#">MASSA DOLORE IPSUM VELITER</a></div>Dertym gerpsu olor sit amet konsectetur
-          laly prortefere allo adipiscing uisque ultricies ligula eu dignissio meri oiverra metus felis laoreet nobh ut
-          porta ellusy.
-        </div>
-        <div class="grid_4 omega">
-          <div class="blog_img">
-            <img src="images/page1_img6.jpg" alt="">
-            <time datetime="2013-01-01">26<span>apr</span></time>
-          </div>
-          <div class="text1 upp"><a href="#">Pellentesque volutpat ante </a></div>Lorem ipsum dolor sit amet consectetur
-          lall prorte alle adipiscing uisque ultricies ligula eu dignissim viverra metus felis laoreet nibh ut porta
-          tellus.
-        </div>
-      </div> -->
-			<!-- <div class="grid_4">
-        <h3>Testimonials</h3>
-        <div id="owl">
-          <div class="item">
-            <img src="images/page1_img7.jpg" alt="">
-            <div class="extra_wrapper">
-              <div class="text1 upp"><time datetime="2013-01-01">April 12/03/13</time></div>
-              Max Taylor
-            </div>
-            <div class="clear"></div>
-            Jorem ipsum dolor sit amet consecteturler adipiscing elit. Wuisque ultricies ligula eur dignissim viverra,
-            metus felis laoreet.
-          </div>
-          <div class="item">
-            <img src="images/nophoto.jpg" alt="">
-            <div class="extra_wrapper">
-              <div class="text1 upp"><time datetime="2013-01-01">April 14/03/13</time></div>
-              Bradley Grosh
-            </div>
-            <div class="clear"></div>
-            Jorem ipsum dolor sit amet consecteturler adipiscing elit. Wuisque ultricies ligula eur dignissim viverra,
-            metus felis laoreet.
-          </div>
-          <div class="item">
-            <img src="images/nophoto.jpg" alt="">
-            <div class="extra_wrapper">
-              <div class="text1 upp"><time datetime="2013-01-01">April 28/05/13</time></div>
-              Alex Smith
-            </div>
-            <div class="clear"></div>
-            Jorem ipsum dolor sit amet consecteturler adipiscing elit. Wuisque ultricies ligula eur dignissim viverra,
-            metus felis laoreet.
-          </div>
-        </div>
-      </div> -->
+  <!-- Logo Row -->
+  <div class="grid_12 animation-scroll" style="text-align:center; margin-bottom:30px;">
+    <h3>
+      <a class="logo-fl" href="https://www.bondsadda.com">
+        Bonds Adda
+        <img id="logo-img" src="images/logo (1).png" alt="Bonds Adda Logo" style="vertical-align:middle; margin-left:10px; height:40px;">
+      </a>
+    </h3>
+  </div>
+
+  <!-- 4 Category Boxes Row -->
+  <div class="grid_3 category-card">
+    <a href="https://bondsadda.com/OurCollections?oId=29" target="_blank">
+      <img src="images/1.jpg" alt="Government Securities">
+      <div class="text1">Government Securities</div>
+    </a>
+  </div>
+
+  <div class="grid_3 category-card">
+    <a href="https://bondsadda.com/OurCollections?oId=26" target="_blank">
+      <img src="images/2.jpg" alt="PSU Bonds">
+      <div class="text1">PSU Bonds</div>
+    </a>
+  </div>
+
+  <div class="grid_3 category-card">
+    <a href="https://bondsadda.com/OurCollections?oId=17" target="_blank">
+      <img src="images/4.jpg" alt="Tax Free Bonds">
+      <div class="text1">Tax Free Bonds</div>
+    </a>
+  </div>
+
+  <div class="grid_3 category-card">
+    <a href="https://bondsadda.com/OurCollections?oId=27" target="_blank">
+      <img src="images/3.jpg" alt="Capital Gain (54EC)">
+      <div class="text1">Capital Gain (54EC)</div>
+    </a>
+  </div>
+
+  <!-- Separator -->
+  <div class="grid_12">
+    <div class="hor"></div>
+  </div>
+</div>
 
 
-		</div>
-	</div>
+
+
 	<!--==============================footer=================================-->
 	<footer>
 		<div class="container_12">
@@ -839,6 +878,25 @@
     }
   });
 	</script>
+	<!-- JS for clickable dropdown -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const servicesMenu = document.querySelector(".has-submenu > a");
+    const submenu = document.querySelector(".has-submenu .submenu");
+
+    servicesMenu.addEventListener("click", function (e) {
+      e.preventDefault();
+      submenu.classList.toggle("show");
+    });
+
+    // Close submenu if clicking outside
+    document.addEventListener("click", function (e) {
+      if (!servicesMenu.parentElement.contains(e.target)) {
+        submenu.classList.remove("show");
+      }
+    });
+  });
+</script>
 </body>
 
 </html>

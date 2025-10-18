@@ -25,8 +25,7 @@ body {
 	color: #a1a1a1;
 	position: relative;
 	min-width: 960px;
-	background: #232323;
-
+	
 }
 
 
@@ -349,14 +348,14 @@ header h1 a img {
 
 /**Content**/
 
-.content {
+/* .content {
 	background-color: #fff;
 	padding-bottom: 113px;
-}
+} */
 
-.page1 .content {
+/* .page1 .content {
 	padding-bottom: 96px;
-}
+} */
 
 .text1 {
 	font-size: 14px;

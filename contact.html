@@ -55,9 +55,7 @@
       z-index: 999;
     }
 
-    .sf-menu li:hover > ul {
-      display: block;
-    }
+
 
     .sf-menu li ul li {
       width: 100%;
@@ -172,13 +170,18 @@
 							<li ><a style="font-family: Poppins, sans-serif;" href="index.html">Home</a>
 							</li>
 							<li><a style="font-family: Poppins, sans-serif;" href="about-us.html">About Us</a></li>
-							<li ><a style="font-family: Poppins, sans-serif;" href="services.html"> Services</a></li>
+							<!-- Dropdown for Services -->
+              <li class="has-submenu">
+                <a style="font-family: Poppins, sans-serif; cursor: pointer;">Services ▾</a>
+                <ul class="submenu">
+                  <li><a style="font-family: Poppins, sans-serif;" href="merchantbanking.html">Merchant Banking</a></li>
+                  <li><a style="font-family: Poppins, sans-serif;" href="stockbroking.html">Stock Broking</a></li>
+                  
+                </ul>
+              </li>
+							<!-- <li><a style="font-family: Poppins, sans-serif;" href="Career.html">Career</a></li> -->
 							<li><a style="font-family: Poppins, sans-serif;" href="annual.html"> Investor Corner </a></li>
 							<li class="current"><a style="font-family: Poppins, sans-serif;" href="contact.html">Contact Us</a>
-								
-
-							
-							</li>
 						
 							
 							<!-- <li><a style="font-family: Poppins, sans-serif;" href="index-3.html">Projects</a></li> -->
@@ -320,6 +323,40 @@
       <i class="fab fa-whatsapp"></i> <!-- FontAwesome Icon for WhatsApp -->
   </div>
   </footer>
+  <script>
+		 const contactToggle = document.getElementById("contact-toggle");
+  const dropdownLi = document.getElementById("contact-li");
+
+  contactToggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownLi.classList.toggle("show-dropdown");
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!dropdownLi.contains(e.target)) {
+      dropdownLi.classList.remove("show-dropdown");
+    }
+  });
+	</script>
+	<!-- JS for clickable dropdown -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const servicesMenu = document.querySelector(".has-submenu > a");
+    const submenu = document.querySelector(".has-submenu .submenu");
+
+    servicesMenu.addEventListener("click", function (e) {
+      e.preventDefault();
+      submenu.classList.toggle("show");
+    });
+
+    // Close submenu if clicking outside
+    document.addEventListener("click", function (e) {
+      if (!servicesMenu.parentElement.contains(e.target)) {
+        submenu.classList.remove("show");
+      }
+    });
+  });
+</script>
 </body>
 
 </html>
