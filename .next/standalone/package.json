@@ -1,0 +1,33 @@
+{
+  "name": "next-finance-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./node_modules/next/dist/bin/next dev",
+   "build": "next build --webpack",
+"start": "next start",
+    "build:clean": "powershell -NoProfile -Command \"$env:NEXT_DIST_DIR='.next-build'; npm.cmd run build\"",
+    "safe-build": "powershell -ExecutionPolicy Bypass -File ./scripts/safe-build.ps1",
+   
+    "lint": "node ./node_modules/next/dist/bin/next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.20",
+    "lucide-react": "^1.14.0",
+    "next": "^16.2.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "three": "^0.173.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.7.2"
+  }
+}

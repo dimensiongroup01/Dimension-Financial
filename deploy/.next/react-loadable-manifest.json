@@ -1,0 +1,86 @@
+{
+  "components\\AnimatedSections.tsx -> gsap": {
+    "id": 7605,
+    "files": [
+      "static/chunks/c15bf2b0.9fc21fe62e22c072.js",
+      "static/chunks/605.596b13dcde22bed6.js"
+    ]
+  },
+  "components\\AnimatedSections.tsx -> gsap/ScrollTrigger": {
+    "id": 5580,
+    "files": [
+      "static/chunks/580.033c0915b242333b.js"
+    ]
+  },
+  "components\\ClientsShowcase.tsx -> gsap": {
+    "id": 7605,
+    "files": [
+      "static/chunks/c15bf2b0.9fc21fe62e22c072.js",
+      "static/chunks/605.596b13dcde22bed6.js"
+    ]
+  },
+  "components\\ClientsShowcase.tsx -> gsap/ScrollTrigger": {
+    "id": 5580,
+    "files": [
+      "static/chunks/580.033c0915b242333b.js"
+    ]
+  },
+  "components\\GlobeHero.tsx -> gsap": {
+    "id": 7605,
+    "files": [
+      "static/chunks/c15bf2b0.9fc21fe62e22c072.js",
+      "static/chunks/605.596b13dcde22bed6.js"
+    ]
+  },
+  "components\\GlobeHero.tsx -> three": {
+    "id": 7548,
+    "files": [
+      "static/chunks/b536a0f1.9a4ef19cda9d0a00.js",
+      "static/chunks/bd904a5c.b0427e9d7b09a8ae.js"
+    ]
+  },
+  "components\\HomeHeroScene.tsx -> gsap": {
+    "id": 7605,
+    "files": [
+      "static/chunks/c15bf2b0.9fc21fe62e22c072.js",
+      "static/chunks/605.596b13dcde22bed6.js"
+    ]
+  },
+  "components\\HomeHeroScene.tsx -> gsap/ScrollTrigger": {
+    "id": 5580,
+    "files": [
+      "static/chunks/580.033c0915b242333b.js"
+    ]
+  },
+  "components\\ScrollFusion3D.tsx -> gsap": {
+    "id": 7605,
+    "files": [
+      "static/chunks/c15bf2b0.9fc21fe62e22c072.js",
+      "static/chunks/605.596b13dcde22bed6.js"
+    ]
+  },
+  "components\\ScrollFusion3D.tsx -> gsap/ScrollTrigger": {
+    "id": 5580,
+    "files": [
+      "static/chunks/580.033c0915b242333b.js"
+    ]
+  },
+  "components\\SmoothScrollProvider.tsx -> gsap/ScrollTrigger": {
+    "id": 5580,
+    "files": [
+      "static/chunks/580.033c0915b242333b.js"
+    ]
+  },
+  "node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": 5139,
+    "files": [
+      "static/chunks/139.7a5a8e93a21948c1.js"
+    ]
+  },
+  "node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 1646,
+    "files": [
+      "static/chunks/646.f342b7cffc01feb0.js"
+    ]
+  }
+}

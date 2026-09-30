@@ -1,0 +1,201 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/about-us.html",
+      "destination": "/about-us",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/about-us\\.html(?:/)?$"
+    },
+    {
+      "source": "/services.html",
+      "destination": "/services",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/services\\.html(?:/)?$"
+    },
+    {
+      "source": "/deals.html",
+      "destination": "/services",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/deals\\.html(?:/)?$"
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/contact\\.html(?:/)?$"
+    },
+    {
+      "source": "/annual.html",
+      "destination": "/annual",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/annual\\.html(?:/)?$"
+    },
+    {
+      "source": "/Career.html",
+      "destination": "/career",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/Career\\.html(?:/)?$"
+    },
+    {
+      "source": "/merchantbanking.html",
+      "destination": "/merchant-banking",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/merchantbanking\\.html(?:/)?$"
+    },
+    {
+      "source": "/stockbroking.html",
+      "destination": "/stock-broking",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/stockbroking\\.html(?:/)?$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about-us",
+      "regex": "^/about\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-us(?:/)?$"
+    },
+    {
+      "page": "/annual",
+      "regex": "^/annual(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/annual(?:/)?$"
+    },
+    {
+      "page": "/api/auth/login",
+      "regex": "^/api/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/login(?:/)?$"
+    },
+    {
+      "page": "/api/auth/signup",
+      "regex": "^/api/auth/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/signup(?:/)?$"
+    },
+    {
+      "page": "/career",
+      "regex": "^/career(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/career(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/home",
+      "regex": "^/home(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home(?:/)?$"
+    },
+    {
+      "page": "/icon.svg",
+      "regex": "^/icon\\.svg(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.svg(?:/)?$"
+    },
+    {
+      "page": "/investor",
+      "regex": "^/investor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/investor(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/merchant-banking",
+      "regex": "^/merchant\\-banking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/merchant\\-banking(?:/)?$"
+    },
+    {
+      "page": "/services",
+      "regex": "^/services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services(?:/)?$"
+    },
+    {
+      "page": "/signup",
+      "regex": "^/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/signup(?:/)?$"
+    },
+    {
+      "page": "/sitemap-page",
+      "regex": "^/sitemap\\-page(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\-page(?:/)?$"
+    },
+    {
+      "page": "/stock-broking",
+      "regex": "^/stock\\-broking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/stock\\-broking(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

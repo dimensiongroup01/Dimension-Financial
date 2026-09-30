@@ -1,0 +1,53 @@
+{
+  "components\\AnimatedSections.tsx -> gsap": {
+    "id": 5911,
+    "files": [
+      "static/chunks/c15bf2b0.511eb384327f0c0f.js",
+      "static/chunks/911.3f3c12bdca9e18cf.js"
+    ]
+  },
+  "components\\AnimatedSections.tsx -> gsap/ScrollTrigger": {
+    "id": 3018,
+    "files": [
+      "static/chunks/18.b47f725f72f402b6.js"
+    ]
+  },
+  "components\\GlobeHero.tsx -> three": {
+    "id": 9625,
+    "files": [
+      "static/chunks/b536a0f1.d8d9cf118bab74c8.js",
+      "static/chunks/bd904a5c.fceeb6902fba828b.js"
+    ]
+  },
+  "components\\HomeHeroScene.tsx -> gsap": {
+    "id": 5911,
+    "files": [
+      "static/chunks/c15bf2b0.511eb384327f0c0f.js",
+      "static/chunks/911.3f3c12bdca9e18cf.js"
+    ]
+  },
+  "components\\HomeHeroScene.tsx -> gsap/ScrollTrigger": {
+    "id": 3018,
+    "files": [
+      "static/chunks/18.b47f725f72f402b6.js"
+    ]
+  },
+  "components\\SmoothScrollProvider.tsx -> gsap/ScrollTrigger": {
+    "id": 3018,
+    "files": [
+      "static/chunks/18.b47f725f72f402b6.js"
+    ]
+  },
+  "node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": 1966,
+    "files": [
+      "static/chunks/966.1775eb621d8d3e09.js"
+    ]
+  },
+  "node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 3899,
+    "files": [
+      "static/chunks/899.1813981119fa1f8a.js"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/_global-error/page": "/_global-error",
+  "/api/auth/login/route": "/api/auth/login",
+  "/api/auth/signup/route": "/api/auth/signup",
+  "/icon.svg/route": "/icon.svg",
+  "/contact/page": "/contact",
+  "/sitemap-page/page": "/sitemap-page",
+  "/annual/page": "/annual",
+  "/about-us/page": "/about-us",
+  "/career/page": "/career",
+  "/home/page": "/home",
+  "/investor/page": "/investor",
+  "/login/page": "/login",
+  "/page": "/",
+  "/merchant-banking/page": "/merchant-banking",
+  "/services/page": "/services",
+  "/signup/page": "/signup",
+  "/stock-broking/page": "/stock-broking"
+}

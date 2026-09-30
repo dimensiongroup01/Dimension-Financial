@@ -1,0 +1,19 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/signup/route": "app/api/auth/signup/route.js",
+  "/icon.svg/route": "app/icon.svg/route.js",
+  "/contact/page": "app/contact/page.js",
+  "/sitemap-page/page": "app/sitemap-page/page.js",
+  "/annual/page": "app/annual/page.js",
+  "/career/page": "app/career/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/home/page": "app/home/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/merchant-banking/page": "app/merchant-banking/page.js",
+  "/investor/page": "app/investor/page.js",
+  "/signup/page": "app/signup/page.js",
+  "/services/page": "app/services/page.js",
+  "/stock-broking/page": "app/stock-broking/page.js"
+}

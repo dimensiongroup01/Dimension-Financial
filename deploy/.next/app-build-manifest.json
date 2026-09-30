@@ -1,0 +1,145 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/app/_not-found/page-42f4fae95977670a.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/css/6151a4d859446a79.css",
+      "static/chunks/app/layout-a250a4afa9de2930.js"
+    ],
+    "/api/auth/login/route": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/app/api/auth/login/route-6ea54896433259f3.js"
+    ],
+    "/api/auth/signup/route": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/app/api/auth/signup/route-6ea54896433259f3.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/539-e82a7bb5717bb4d1.js",
+      "static/chunks/app/contact/page-e3d938efe6519c26.js"
+    ],
+    "/sitemap-page/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/app/sitemap-page/page-3b1a958801091f6e.js"
+    ],
+    "/annual/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/539-e82a7bb5717bb4d1.js",
+      "static/chunks/app/annual/page-33e926b020039c37.js"
+    ],
+    "/career/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/539-e82a7bb5717bb4d1.js",
+      "static/chunks/app/career/page-8b910edd09fd502e.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/app/about-us/page-2edbf52979fd57e3.js"
+    ],
+    "/home/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/841-fd52d6e531906344.js",
+      "static/chunks/app/home/page-95f3d00045800948.js"
+    ],
+    "/login/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/app/login/page-f90335da7283cf0a.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/841-fd52d6e531906344.js",
+      "static/chunks/app/page-1ebea8c54dd81431.js"
+    ],
+    "/merchant-banking/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/539-e82a7bb5717bb4d1.js",
+      "static/chunks/app/merchant-banking/page-33e926b020039c37.js"
+    ],
+    "/investor/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/app/investor/page-b5137a0575543cd9.js"
+    ],
+    "/signup/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/app/signup/page-f90335da7283cf0a.js"
+    ],
+    "/services/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/539-e82a7bb5717bb4d1.js",
+      "static/chunks/app/services/page-65a893b22ffc1ffd.js"
+    ],
+    "/stock-broking/page": [
+      "static/chunks/webpack-570beb1c5920ee19.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faae13a167d4dd29.js",
+      "static/chunks/894-4b71a5b3f6a5ae1f.js",
+      "static/chunks/539-e82a7bb5717bb4d1.js",
+      "static/chunks/app/stock-broking/page-33e926b020039c37.js"
+    ]
+  }
+}
